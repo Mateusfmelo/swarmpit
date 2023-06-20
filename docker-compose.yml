@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    install:
+        container_name: swarmpit-installer
+        volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+        image: 'swarmpit/install:edge'
